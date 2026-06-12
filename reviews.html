@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="9 видео-отзывов клиентов Александры Волковой. Запись на бесплатную диагностику 30 минут.">
+  <meta name="theme-color" content="#0A0C0A">
+  <title>Отзывы — Александра Волкова · Private Capital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/boot-guard.js"></script>
+</head>
+<body>
+
+  <div class="preloader" id="preloader" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Загрузка">
+    <div>
+      <p class="preloader__name" id="preloader-name">Александра Волкова</p>
+      <p class="preloader__tagline" id="preloader-tagline">Private Capital · Отзывы</p>
+    </div>
+    <div>
+      <div class="preloader__bar-wrap" id="preloader-bar"></div>
+      <p class="preloader__percent" id="preloader-percent">0%</p>
+    </div>
+  </div>
+
+  <div class="cursor is-hidden" id="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <div class="environment" aria-hidden="true">
+    <canvas class="environment__canvas" id="environment-canvas"></canvas>
+    <div class="environment__grain"></div>
+    <div class="environment__vignette"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header" role="banner">
+      <div class="header__inner container">
+        <a href="index.html" class="header__logo" data-cursor="hover">
+          <span class="header__logo-name">Александра Волкова</span>
+          <span class="header__logo-tag">Private Capital</span>
+        </a>
+        <nav class="header-subnav" id="header-subnav" aria-label="Навигация по сайту"></nav>
+        <button class="header__burger" id="nav-burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-panel" data-cursor="hover">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="nav-panel" id="nav-panel" aria-hidden="true">
+      <div class="nav-panel__bg"></div>
+      <div class="nav-panel__grain"></div>
+      <div class="nav-panel__inner">
+        <ul class="nav-panel__list">
+          <li class="nav-panel__item"><a href="index.html" class="nav-panel__link" data-num="01" data-cursor="hover">Главная</a></li>
+          <li class="nav-panel__item"><a href="about.html" class="nav-panel__link" data-num="02" data-cursor="hover">Обо мне</a></li>
+          <li class="nav-panel__item"><a href="services.html" class="nav-panel__link" data-num="03" data-cursor="hover">Услуги</a></li>
+          <li class="nav-panel__item"><a href="capital.html" class="nav-panel__link" data-num="04" data-cursor="hover">Капитал</a></li>
+          <li class="nav-panel__item"><a href="reviews.html" class="nav-panel__link is-active" data-num="05" data-cursor="hover">Отзывы</a></li>
+          <li class="nav-panel__item"><a href="course.html" class="nav-panel__link nav-panel__link--course" data-num="06" data-cursor="hover">Курс осознанности</a></li>
+        </ul>
+        <div class="nav-panel__cta">
+          <a href="#contact" class="btn-cta" data-cursor="hover">
+            <span class="btn-cta__glow"></span>
+            Бесплатная диагностика
+          </a>
+        </div>
+        <div class="nav-panel__footer">
+          <a href="https://t.me/alexavolkova" target="_blank" rel="noopener noreferrer" data-cursor="hover">@alexavolkova</a>
+          <a href="tel:+31622912016" data-cursor="hover">+31622912016</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <section class="page-hero-capital page-hero-reviews" aria-labelledby="reviews-title">
+        <div class="page-hero-capital__bg" aria-hidden="true"></div>
+        <div class="container page-hero-capital__inner">
+          <p class="page-hero-capital__crumb"><a href="index.html">Главная</a> / Отзывы</p>
+          <span class="eyebrow">Голоса клиентов</span>
+          <h1 class="page-hero-capital__title" id="reviews-title">
+            Истории<br><em>трансформации</em>
+          </h1>
+          <p class="page-hero-capital__sub">
+            9 видео-отзывов на YouTube — реальные результаты работы с капиталом и внутренними блоками.
+          </p>
+        </div>
+      </section>
+
+      <section class="section" style="padding-top:0;">
+        <div class="container">
+          <div class="capital-stats reveal-reviews">
+            <div class="capital-stat"><div class="capital-stat__val">9</div><div class="capital-stat__lbl">Видео-отзывов</div></div>
+            <div class="capital-stat"><div class="capital-stat__val">30</div><div class="capital-stat__lbl">Мин диагностика</div></div>
+            <div class="capital-stat"><div class="capital-stat__val">ACCA</div><div class="capital-stat__lbl">MBA · CFA</div></div>
+            <div class="capital-stat"><div class="capital-stat__val">16K$</div><div class="capital-stat__lbl">Инвестиция</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="reviews" aria-labelledby="reviews-grid-title">
+        <div class="container">
+          <div class="section__top section__top--center reveal-reviews">
+            <span class="section__label">YouTube</span>
+            <h2 class="section__title" id="reviews-grid-title">Видео-отзывы <em>клиентов</em></h2>
+            <p class="section__desc">
+              Нажмите на превью — откроется плеер. Или смотрите на YouTube по прямой ссылке под каждым видео.
+            </p>
+          </div>
+          <div class="yt-reviews" id="yt-reviews-list"></div>
+          <p class="yt-reviews__note reveal-reviews">
+            Все отзывы — реальные видео клиентов на канале
+            <a href="https://www.youtube.com/@AlexandraVolkova./" target="_blank" rel="noopener noreferrer">@AlexandraVolkova</a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--cream" id="diplomas">
+        <div class="container">
+          <div class="section__top section__top--center reveal-reviews">
+            <span class="section__label">Дипломы</span>
+            <h2 class="section__title">Сертификаты и квалификации</h2>
+            <p class="section__desc">Отдельный раздел — не путать с отзывами. Подробнее в разделе «Обо мне».</p>
+          </div>
+          <div class="reviews-diplomas reveal-reviews">
+            <a href="about.html#diplomas" class="reviews-diploma" data-cursor="hover">
+              <img src="assets/images/diplomas/diploma-1.jpg" alt="Сертификат 1" loading="lazy">
+            </a>
+            <a href="about.html#diplomas" class="reviews-diploma" data-cursor="hover">
+              <img src="assets/images/diplomas/diploma-2.jpg" alt="Сертификат 2" loading="lazy">
+            </a>
+            <a href="about.html#diplomas" class="reviews-diploma" data-cursor="hover">
+              <img src="assets/images/diplomas/diploma-3.jpg" alt="Сертификат 3" loading="lazy">
+            </a>
+            <a href="about.html#diplomas" class="reviews-diploma" data-cursor="hover">
+              <img src="assets/images/diplomas/diploma-4.jpg" alt="Сертификат 4" loading="lazy">
+            </a>
+          </div>
+          <p class="text-center reveal-reviews" style="margin-top:28px;text-align:center;">
+            <a href="about.html#diplomas" class="btn-ghost" data-cursor="hover">
+              Подробнее в разделе «Обо мне»
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section class="section section--chocolate" id="contact" aria-labelledby="contact-title">
+        <div class="container">
+          <div class="section__top reveal-reviews">
+            <div>
+              <span class="section__label">Связь</span>
+              <h2 class="section__title" id="contact-title">Записаться на диагностику</h2>
+            </div>
+            <p class="section__desc">Многошаговая форма · Ответ в Telegram в течение дня · Онлайн · Международно</p>
+          </div>
+
+          <div class="contact-section reveal-reviews">
+            <div>
+              <p class="body-lg" style="margin-bottom:24px;">Контакты и каналы. SVG-иконки рисуются при скролле.</p>
+              <div class="contact-channels" id="contact-channels"></div>
+            </div>
+
+            <div class="form-wizard" id="form-wizard">
+              <div class="form-wizard__head">
+                <h3 class="form-wizard__title">Заявка</h3>
+                <p class="form-wizard__sub">3 шага — контакты, услуга, стадия и запрос</p>
+              </div>
+
+              <div class="form-wizard__steps">
+                <div class="form-wizard__step-dot is-active"></div>
+                <div class="form-wizard__step-dot"></div>
+                <div class="form-wizard__step-dot"></div>
+                <div class="form-wizard__step-labels">
+                  <span>Контакты</span>
+                  <span>Услуга</span>
+                  <span>Стадия</span>
+                </div>
+              </div>
+
+              <div class="form-wizard__viewport">
+                <div class="form-wizard__track">
+                  <!-- Step 1 -->
+                  <div class="form-wizard__pane">
+                    <div class="form-field">
+                      <label for="form-name">Ваше имя</label>
+                      <input type="text" id="form-name" name="name" required autocomplete="name">
+                    </div>
+                    <div class="form-field">
+                      <label for="form-contact">Телефон или Telegram</label>
+                      <input type="text" id="form-contact" name="contact" required autocomplete="tel">
+                    </div>
+                  </div>
+                  <!-- Step 2 -->
+                  <div class="form-wizard__pane">
+                    <div class="form-field">
+                      <label for="form-service">Услуга</label>
+                      <select id="form-service" name="service" required></select>
+                    </div>
+                  </div>
+                  <!-- Step 3 -->
+                  <div class="form-wizard__pane">
+                    <p class="form-field label" style="margin-bottom:8px;font-size:0.6875rem;letter-spacing:0.1em;text-transform:uppercase;color:var(--text-light-dim);">Ваша стадия в деньгах</p>
+                    <div class="form-chips"></div>
+                    <div class="form-field">
+                      <label for="form-message">Ваш запрос</label>
+                      <textarea id="form-message" name="message" rows="3"></textarea>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-wizard__actions">
+                <button type="button" class="form-wizard__btn form-wizard__btn--back" style="visibility:hidden;">Назад</button>
+                <button type="button" class="form-wizard__btn form-wizard__btn--next">
+                  <span class="form-wizard__btn-content">
+                    <span class="form-wizard__btn-text">Далее</span>
+                  </span>
+                </button>
+                <button type="button" class="form-wizard__btn form-wizard__btn--submit" style="display:none;">
+                  <span class="form-wizard__btn-content">
+                    <span class="form-wizard__btn-text">Отправить в Telegram</span>
+                    <span class="form-wizard__loader" aria-hidden="true"></span>
+                    <svg class="form-wizard__check" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L19 7"/></svg>
+                  </span>
+                </button>
+              </div>
+
+              <div class="form-wizard__success">
+                <div class="form-wizard__success-icon">
+                  <svg viewBox="0 0 24 24"><path d="M5 12l5 5L19 7"/></svg>
+                </div>
+                <h3>Заявка готова!</h3>
+                <p>Telegram открыт с готовым текстом — нажмите «Отправить» в чате.</p>
+                <div class="form-wizard__success-links">
+                  <a href="#" class="btn-cta" data-open-telegram data-cursor="hover"><span class="btn-cta__glow"></span>Открыть Telegram</a>
+                  <a href="#" class="btn-ghost" data-open-whatsapp target="_blank" rel="noopener" data-cursor="hover">WhatsApp</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="capital-cta reveal-reviews">
+            <h2 class="display-lg" style="margin-bottom:12px;">Готовы к новому уровню?</h2>
+            <p class="body-lg" style="max-width:440px;margin:0 auto 28px;">Первый шаг — бесплатная диагностика 30 минут. Без обязательств.</p>
+            <a href="#contact" class="btn-cta" data-cursor="hover">
+              <span class="btn-cta__glow"></span>
+              Записаться сейчас
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-full" id="site-footer" role="contentinfo"></footer>
+
+  </div>
+
+  <script type="module" src="js/reviews.js"></script>
+</body>
+</html>

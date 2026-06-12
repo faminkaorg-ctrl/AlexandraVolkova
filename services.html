@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Инвестиции, личный аудит капитала, бесплатная консультация 30 минут — Александра Волкова, Private Capital.">
+  <meta name="theme-color" content="#0A0C0A">
+  <title>Услуги — Александра Волкова · Private Capital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/boot-guard.js"></script>
+</head>
+<body class="page-services">
+
+  <div class="preloader" id="preloader" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Загрузка">
+    <div>
+      <p class="preloader__name" id="preloader-name">Александра Волкова</p>
+      <p class="preloader__tagline" id="preloader-tagline">Private Capital · Услуги</p>
+    </div>
+    <div>
+      <div class="preloader__bar-wrap" id="preloader-bar"></div>
+      <p class="preloader__percent" id="preloader-percent">0%</p>
+    </div>
+  </div>
+
+  <div class="cursor is-hidden" id="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <div class="environment" aria-hidden="true">
+    <canvas class="environment__canvas" id="environment-canvas"></canvas>
+    <div class="environment__grain"></div>
+    <div class="environment__vignette"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header" role="banner">
+      <div class="header__inner container">
+        <a href="index.html" class="header__logo" data-cursor="hover">
+          <span class="header__logo-name">Александра Волкова</span>
+          <span class="header__logo-tag">Private Capital</span>
+        </a>
+        <nav class="header-subnav" id="header-subnav" aria-label="Навигация по сайту"></nav>
+        <button class="header__burger" id="nav-burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-panel" data-cursor="hover">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="nav-panel" id="nav-panel" aria-hidden="true">
+      <div class="nav-panel__bg"></div>
+      <div class="nav-panel__grain"></div>
+      <div class="nav-panel__inner">
+        <ul class="nav-panel__list">
+          <li class="nav-panel__item"><a href="index.html" class="nav-panel__link" data-num="01" data-cursor="hover">Главная</a></li>
+          <li class="nav-panel__item"><a href="about.html" class="nav-panel__link" data-num="02" data-cursor="hover">Обо мне</a></li>
+          <li class="nav-panel__item"><a href="services.html" class="nav-panel__link is-active" data-num="03" data-cursor="hover">Услуги</a></li>
+          <li class="nav-panel__item"><a href="capital.html" class="nav-panel__link" data-num="04" data-cursor="hover">Капитал</a></li>
+          <li class="nav-panel__item"><a href="reviews.html" class="nav-panel__link" data-num="05" data-cursor="hover">Отзывы</a></li>
+          <li class="nav-panel__item"><a href="course.html" class="nav-panel__link nav-panel__link--course" data-num="06" data-cursor="hover">Курс осознанности</a></li>
+        </ul>
+        <div class="nav-panel__cta">
+          <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+            <span class="btn-cta__glow"></span>
+            Бесплатная диагностика
+          </a>
+        </div>
+        <div class="nav-panel__footer">
+          <a href="https://t.me/alexavolkova" target="_blank" rel="noopener noreferrer" data-cursor="hover">@alexavolkova</a>
+          <a href="tel:+31622912016" data-cursor="hover">+31622912016</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <!-- Cinematic hero -->
+      <section class="svc-cine-hero" aria-labelledby="services-title">
+        <div class="svc-cine-hero__bg" aria-hidden="true"></div>
+        <div class="svc-cine-hero__glow" aria-hidden="true"></div>
+        <div class="svc-cine-hero__ticker" id="svc-ticker" aria-hidden="true"></div>
+        <div class="container svc-cine-hero__inner">
+          <p class="svc-cine-hero__crumb"><a href="index.html">Главная</a> / Услуги</p>
+          <div class="svc-cine-hero__grid">
+            <div class="svc-cine-hero__copy">
+              <span class="svc-cine-hero__label">Private Capital</span>
+              <h1 class="svc-cine-hero__title" id="services-title">
+                <span class="svc-cine-hero__title-line">Архитектура</span>
+                <span class="svc-cine-hero__title-line svc-cine-hero__title-line--gold">вашего капитала</span>
+              </h1>
+              <p class="svc-cine-hero__sub" id="svc-hero-sub"></p>
+              <div class="svc-cine-hero__stats" id="svc-hero-stats"></div>
+            </div>
+            <div class="svc-cine-hero__cards" id="svc-hero-cards" aria-hidden="true"></div>
+          </div>
+          <a href="#svc-gateway" class="svc-cine-hero__scroll" data-cursor="hover">
+            <span>Листайте</span>
+            <span class="svc-cine-hero__scroll-line"></span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Gateway -->
+      <section class="svc-gateway" id="svc-gateway" aria-labelledby="svc-gateway-title">
+        <div class="svc-gateway__beam" aria-hidden="true"></div>
+        <div class="container svc-gateway__inner">
+          <span class="svc-gateway__label" id="svc-gateway-label"></span>
+          <h2 class="svc-gateway__title" id="svc-gateway-title"></h2>
+          <p class="svc-gateway__lead" id="svc-gateway-lead"></p>
+          <div class="svc-gateway__text" id="svc-gateway-text"></div>
+        </div>
+      </section>
+
+      <!-- Horizontal pinned stage -->
+      <section class="svc-stage" id="svc-stage" aria-label="Презентация услуг">
+        <div class="svc-stage__pin">
+          <div class="svc-stage__hud">
+            <span class="svc-stage__hud-label">Форматы</span>
+            <div class="svc-stage__hud-bar" aria-hidden="true">
+              <span class="svc-stage__hud-fill" id="svc-stage-fill"></span>
+            </div>
+            <nav class="svc-stage__nav" id="svc-stage-nav" aria-label="Навигация по слайдам"></nav>
+          </div>
+          <div class="svc-stage__track" id="svc-stage-track"></div>
+        </div>
+      </section>
+
+      <!-- Deep acts — полный разбор каждого формата -->
+      <section class="svc-theater" id="svc-theater" aria-label="Подробно о каждой услуге">
+        <div class="svc-theater__head container">
+          <span class="section__label">Глубже</span>
+          <h2 class="svc-theater__title">Каждый формат — отдельный акт</h2>
+          <p class="svc-theater__lead">Полный разбор: кому подходит, что на выходе, как проходит работа шаг за шагом.</p>
+        </div>
+        <div class="svc-theater__acts" id="svc-theater-acts"></div>
+      </section>
+
+      <!-- Matrix -->
+      <section class="svc-matrix" id="svc-matrix" aria-labelledby="svc-matrix-title">
+        <div class="svc-matrix__spotlight" id="svc-matrix-spotlight" aria-hidden="true"></div>
+        <div class="container">
+          <div class="svc-matrix__head">
+            <span class="section__label">Маршрут</span>
+            <h2 class="svc-matrix__title" id="svc-matrix-title"></h2>
+            <p class="svc-matrix__lead" id="svc-matrix-lead"></p>
+          </div>
+          <div class="svc-matrix__grid" id="svc-matrix-grid"></div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section class="svc-faq-stage" id="svc-faq" aria-labelledby="svc-faq-title">
+        <div class="container">
+          <h2 class="svc-faq-stage__title" id="svc-faq-title">Вопросы</h2>
+          <div class="svc-faq-stage__list" id="svc-faq-list"></div>
+        </div>
+      </section>
+
+      <!-- Final CTA -->
+      <section class="svc-cta-cine" id="svc-cta-cine">
+        <div class="svc-cta-cine__bg" aria-hidden="true"></div>
+        <div class="container svc-cta-cine__inner">
+          <h2 class="svc-cta-cine__title" id="svc-cta-title"></h2>
+          <p class="svc-cta-cine__lead" id="svc-cta-lead"></p>
+          <p class="svc-cta-cine__text" id="svc-cta-text"></p>
+          <p class="svc-cta-cine__channels" id="svc-cta-channels"></p>
+          <a href="reviews.html?service=consultation#contact" class="btn-cta btn-cta--xl" data-cursor="hover">
+            <span class="btn-cta__glow"></span>
+            Записаться на диагностику
+          </a>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-full" id="site-footer" role="contentinfo"></footer>
+
+  </div>
+
+  <script type="module" src="js/services.js"></script>
+</body>
+</html>

@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Капитал и инвестиции — 7 стадий денег, 5 сценариев, типовые ошибки, мифы пассивного дохода. Александра Волкова.">
+  <meta name="theme-color" content="#0A0C0A">
+  <title>Капитал — Александра Волкова · Private Capital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/boot-guard.js"></script>
+</head>
+<body>
+
+  <div class="preloader" id="preloader" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Загрузка">
+    <div>
+      <p class="preloader__name" id="preloader-name">Александра Волкова</p>
+      <p class="preloader__tagline" id="preloader-tagline">Private Capital · Капитал</p>
+    </div>
+    <div>
+      <div class="preloader__bar-wrap" id="preloader-bar"></div>
+      <p class="preloader__percent" id="preloader-percent">0%</p>
+    </div>
+  </div>
+
+  <div class="cursor is-hidden" id="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <div class="environment" aria-hidden="true">
+    <canvas class="environment__canvas" id="environment-canvas"></canvas>
+    <div class="environment__grain"></div>
+    <div class="environment__vignette"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header" role="banner">
+      <div class="header__inner container">
+        <a href="index.html" class="header__logo" data-cursor="hover">
+          <span class="header__logo-name">Александра Волкова</span>
+          <span class="header__logo-tag">Private Capital</span>
+        </a>
+        <nav class="header-subnav" id="header-subnav" aria-label="Навигация по сайту"></nav>
+        <button class="header__burger" id="nav-burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-panel" data-cursor="hover">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="nav-panel" id="nav-panel" aria-hidden="true">
+      <div class="nav-panel__bg"></div>
+      <div class="nav-panel__grain"></div>
+      <div class="nav-panel__inner">
+        <ul class="nav-panel__list">
+          <li class="nav-panel__item"><a href="index.html" class="nav-panel__link" data-num="01" data-cursor="hover">Главная</a></li>
+          <li class="nav-panel__item"><a href="about.html" class="nav-panel__link" data-num="02" data-cursor="hover">Обо мне</a></li>
+          <li class="nav-panel__item"><a href="services.html" class="nav-panel__link" data-num="03" data-cursor="hover">Услуги</a></li>
+          <li class="nav-panel__item"><a href="capital.html" class="nav-panel__link is-active" data-num="04" data-cursor="hover">Капитал</a></li>
+          <li class="nav-panel__item"><a href="reviews.html" class="nav-panel__link" data-num="05" data-cursor="hover">Отзывы</a></li>
+          <li class="nav-panel__item"><a href="course.html" class="nav-panel__link nav-panel__link--course" data-num="06" data-cursor="hover">Курс осознанности</a></li>
+        </ul>
+        <div class="nav-panel__cta">
+          <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+            <span class="btn-cta__glow"></span>
+            Бесплатная диагностика
+          </a>
+        </div>
+        <div class="nav-panel__footer">
+          <a href="https://t.me/alexavolkova" target="_blank" rel="noopener noreferrer" data-cursor="hover">@alexavolkova</a>
+          <a href="tel:+31622912016" data-cursor="hover">+31622912016</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <!-- Hero -->
+      <section class="page-hero-capital" aria-labelledby="capital-title">
+        <div class="page-hero-capital__bg" aria-hidden="true"></div>
+        <div class="container page-hero-capital__inner">
+          <p class="page-hero-capital__crumb"><a href="index.html">Главная</a> / Капитал</p>
+          <span class="eyebrow">Инвестиции</span>
+          <h1 class="page-hero-capital__title" id="capital-title">
+            От дохода к<br><em>системе капитала</em>
+          </h1>
+          <p class="page-hero-capital__sub">
+            7 стадий · 5 сценариев · Ошибки · Мифы. Логика инвестиций без FOMO и инфо-шума.
+          </p>
+        </div>
+      </section>
+
+      <!-- Stats -->
+      <section class="section" style="padding-top:0;">
+        <div class="container">
+          <div class="capital-stats reveal-capital">
+            <div class="capital-stat">
+              <div class="capital-stat__val">16K$</div>
+              <div class="capital-stat__lbl">Основная инвестиция</div>
+            </div>
+            <div class="capital-stat">
+              <div class="capital-stat__val">12K$</div>
+              <div class="capital-stat__lbl">Общая прибыль</div>
+            </div>
+            <div class="capital-stat">
+              <div class="capital-stat__val">77K$</div>
+              <div class="capital-stat__lbl">Командный оборот</div>
+            </div>
+            <div class="capital-stat">
+              <div class="capital-stat__val">7K$+</div>
+              <div class="capital-stat__lbl">В реальной жизни</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7 Stages — FLIP timeline -->
+      <section class="section section--chocolate" id="stages" aria-labelledby="stages-title">
+        <div class="container">
+          <div class="section__top reveal-capital">
+            <div>
+              <span class="section__label">Стадии</span>
+              <h2 class="section__title" id="stages-title">7 стадий в деньгах</h2>
+            </div>
+            <p class="section__desc">От «приходят и уходят» до «капитал как система». Нажмите стадию — откроется окно с кратким описанием.</p>
+          </div>
+
+          <div class="stages reveal-capital">
+            <div class="stages__timeline" id="stages-timeline">
+              <div class="stages__line" aria-hidden="true"></div>
+              <!-- Rendered by capital.js -->
+            </div>
+            <aside class="stages__panel" id="stages-panel" aria-live="polite">
+              <p class="stages__panel-label">Ваша стадия</p>
+              <p class="stages__panel-num">01</p>
+              <h3 class="stages__panel-title">—</h3>
+              <div class="stages__panel-text">Выберите стадию слева</div>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <!-- 5 Scenarios — 3D tilt + Three.js -->
+      <section class="section" id="scenarios" aria-labelledby="scenarios-title">
+        <div class="container">
+          <div class="section__top reveal-capital">
+            <div>
+              <span class="section__label">Сценарии</span>
+              <h2 class="section__title" id="scenarios-title">5 сценариев инвестирования</h2>
+            </div>
+            <p class="section__desc">5 сценариев инвестирования. Нажмите карточку — откроется краткое описание и шаги.</p>
+          </div>
+
+          <div class="scenarios-wrap reveal-capital" id="scenarios-wrap">
+            <div class="scenarios" id="scenarios-grid" role="list">
+              <!-- Rendered by capital.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mistakes -->
+      <section class="section section--cream" id="mistakes" aria-labelledby="mistakes-title">
+        <div class="container">
+          <div class="section__top reveal-capital">
+            <div>
+              <span class="section__label">Ошибки</span>
+              <h2 class="section__title" id="mistakes-title">Типовые ошибки новичка</h2>
+            </div>
+            <p class="section__desc">Минималистичная типографика. Текст проявляется при скролле.</p>
+          </div>
+          <div class="typo-grid" id="mistakes-grid" role="list">
+            <!-- Rendered by capital.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Myths -->
+      <section class="section section--cream" id="myths" aria-labelledby="myths-title" style="padding-top:0;">
+        <div class="container">
+          <div class="section__top reveal-capital">
+            <div>
+              <span class="section__label">Мифы</span>
+              <h2 class="section__title" id="myths-title">Пассивный доход: мифы vs реальность</h2>
+            </div>
+          </div>
+          <div class="myths-list" id="myths-list" role="list">
+            <!-- Rendered by capital.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section">
+        <div class="container">
+          <div class="capital-cta reveal-capital">
+            <h2 class="display-lg" style="margin-bottom:12px;">Определите свою стадию</h2>
+            <p class="body-lg" style="max-width:480px;margin:0 auto 32px;">Бесплатная диагностика 30 минут — причина торможения и маршрут к системному капиталу.</p>
+            <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+              <span class="btn-cta__glow"></span>
+              Записаться на диагностику
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-full" id="site-footer" role="contentinfo"></footer>
+
+  </div>
+
+  <!-- Stage popover -->
+  <div class="stage-pop" id="stage-pop" role="dialog" aria-modal="true" aria-labelledby="stage-pop-title" hidden>
+    <div class="stage-pop__backdrop" data-stage-pop-close></div>
+    <div class="stage-pop__box">
+      <button class="stage-pop__close" type="button" aria-label="Закрыть" data-stage-pop-close data-cursor="hover">×</button>
+      <span class="stage-pop__num" id="stage-pop-num">01</span>
+      <h3 class="stage-pop__title" id="stage-pop-title">—</h3>
+      <p class="stage-pop__brief" id="stage-pop-brief"></p>
+      <div class="stage-pop__section">
+        <p class="stage-pop__label">Признаки</p>
+        <ul class="stage-pop__signs" id="stage-pop-signs"></ul>
+      </div>
+      <p class="stage-pop__next" id="stage-pop-next"></p>
+      <a href="reviews.html#contact" class="btn-ghost stage-pop__cta" data-cursor="hover">
+        Диагностика 30 мин
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Scenario popover -->
+  <div class="scenario-pop" id="scenario-pop" role="dialog" aria-modal="true" aria-labelledby="scenario-pop-title" hidden>
+    <div class="scenario-pop__backdrop" data-scenario-pop-close></div>
+    <div class="scenario-pop__box">
+      <button class="scenario-pop__close" type="button" aria-label="Закрыть" data-scenario-pop-close data-cursor="hover">×</button>
+      <span class="scenario-pop__num" id="scenario-pop-num">01</span>
+      <h3 class="scenario-pop__title" id="scenario-pop-title">—</h3>
+      <p class="scenario-pop__brief" id="scenario-pop-brief"></p>
+      <div class="scenario-pop__section">
+        <p class="scenario-pop__label">Для кого</p>
+        <p class="scenario-pop__for" id="scenario-pop-for"></p>
+      </div>
+      <div class="scenario-pop__section">
+        <p class="scenario-pop__label">Шаги</p>
+        <ol class="scenario-pop__steps" id="scenario-pop-steps"></ol>
+      </div>
+      <p class="scenario-pop__not" id="scenario-pop-not"></p>
+      <a href="reviews.html#contact" class="btn-ghost scenario-pop__cta" data-cursor="hover">
+        Подобрать сценарий
+        <svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+    </div>
+  </div>
+
+  <script type="module" src="js/capital.js"></script>
+</body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Александра Волкова — Private Capital. Стратегия капитала, инвестиции, гипнотерапия. ACCA · MBA · CFA.">
+  <meta name="theme-color" content="#0A0C0A">
+  <title>Александра Волкова — Private Capital · Стратегия капитала</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/boot-guard.js"></script>
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Загрузка сайта">
+    <div>
+      <p class="preloader__name" id="preloader-name">Александра Волкова</p>
+      <p class="preloader__tagline" id="preloader-tagline">Private Capital · Стратегия капитала</p>
+    </div>
+    <div>
+      <div class="preloader__bar-wrap" id="preloader-bar"></div>
+      <p class="preloader__percent" id="preloader-percent">0%</p>
+    </div>
+  </div>
+
+  <!-- Custom cursor -->
+  <div class="cursor is-hidden" id="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <!-- Canvas environment: orbs + grain -->
+  <div class="environment" aria-hidden="true">
+    <canvas class="environment__canvas" id="environment-canvas"></canvas>
+    <div class="environment__grain"></div>
+    <div class="environment__vignette"></div>
+  </div>
+
+  <div class="page">
+
+    <!-- Navigation -->
+    <header class="header" role="banner">
+      <div class="header__inner container">
+        <a href="index.html" class="header__logo" data-cursor="hover" aria-label="Александра Волкова — на главную">
+          <span class="header__logo-name">Александра Волкова</span>
+          <span class="header__logo-tag">Private Capital</span>
+        </a>
+        <nav class="header-subnav" id="header-subnav" aria-label="Навигация по сайту"></nav>
+        <button
+          class="header__burger"
+          id="nav-burger"
+          type="button"
+          aria-label="Открыть меню"
+          aria-expanded="false"
+          aria-controls="nav-panel"
+          data-cursor="hover"
+        >
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="nav-panel" id="nav-panel" aria-hidden="true" aria-label="Основная навигация">
+      <div class="nav-panel__bg"></div>
+      <div class="nav-panel__grain"></div>
+      <div class="nav-panel__inner">
+        <ul class="nav-panel__list">
+          <li class="nav-panel__item">
+            <a href="index.html" class="nav-panel__link is-active" data-num="01" data-cursor="hover">Главная</a>
+          </li>
+          <li class="nav-panel__item">
+            <a href="about.html" class="nav-panel__link" data-num="02" data-cursor="hover">Обо мне</a>
+          </li>
+          <li class="nav-panel__item">
+            <a href="services.html" class="nav-panel__link" data-num="03" data-cursor="hover">Услуги</a>
+          </li>
+          <li class="nav-panel__item">
+            <a href="capital.html" class="nav-panel__link" data-num="04" data-cursor="hover">Капитал</a>
+          </li>
+          <li class="nav-panel__item">
+            <a href="reviews.html" class="nav-panel__link" data-num="05" data-cursor="hover">Отзывы</a>
+          </li>
+          <li class="nav-panel__item">
+            <a href="course.html" class="nav-panel__link nav-panel__link--course" data-num="06" data-cursor="hover">Курс осознанности</a>
+          </li>
+        </ul>
+        <div class="nav-panel__cta">
+          <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+            <span class="btn-cta__glow"></span>
+            Бесплатная диагностика
+          </a>
+        </div>
+        <div class="nav-panel__footer">
+          <a href="https://t.me/alexavolkova" target="_blank" rel="noopener noreferrer" data-cursor="hover">@alexavolkova</a>
+          <a href="tel:+31622912016" data-cursor="hover">+31622912016</a>
+          <a href="https://t.me/privatecapitalalexa" target="_blank" rel="noopener noreferrer" data-cursor="hover">Канал</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <!-- Hero -->
+      <section class="hero" id="hero" aria-labelledby="hero-title">
+        <div class="container hero__inner">
+
+          <div class="hero__content">
+            <p class="hero__eyebrow eyebrow">
+              <span class="hero__eyebrow-dot" aria-hidden="true"></span>
+              Private Capital · Стратегия капитала
+            </p>
+
+            <h1 class="hero__title display-xl" id="hero-title">
+              <span class="hero__title-line" data-split-line>Большинство умеют</span>
+              <span class="hero__title-line" data-split-line>зарабатывать.</span>
+              <span class="hero__title-line hero__title-line--accent" data-split-line>Немногие — создавать капитал.</span>
+            </h1>
+
+            <p class="hero__desc body-lg">
+              Помогаю предпринимателям выстроить систему денег: финансовая стратегия,
+              инвестиционное мышление и внутренняя устойчивость. Спокойно, системно,
+              на длинной дистанции.
+            </p>
+
+            <div class="hero__actions">
+              <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+                <span class="btn-cta__glow"></span>
+                Бесплатная диагностика 30 мин
+              </a>
+              <a href="capital.html" class="btn-ghost" data-cursor="hover">
+                7 стадий капитала
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+
+            <div class="hero__stats" aria-label="Ключевые показатели">
+              <div>
+                <div class="hero__stat-value" data-count="16" data-suffix="K$">0K$</div>
+                <div class="hero__stat-label">Основная инвестиция</div>
+              </div>
+              <div>
+                <div class="hero__stat-value" data-count="12" data-suffix="K$">0K$</div>
+                <div class="hero__stat-label">Общая прибыль</div>
+              </div>
+              <div>
+                <div class="hero__stat-value" data-count="77" data-suffix="K$">0K$</div>
+                <div class="hero__stat-label">Командный оборот</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero__visual">
+            <div class="hero__portrait-wrap">
+              <div class="hero__portrait-glow" aria-hidden="true"></div>
+              <div class="hero__portrait-frame" aria-hidden="true"></div>
+              <figure class="hero__portrait-mask">
+                <img
+                  src="assets/images/photos/taty-2.jpeg"
+                  alt="Александра Волкова — стратег по капиталу, ACCA MBA CFA"
+                  width="600"
+                  height="750"
+                  fetchpriority="high"
+                >
+              </figure>
+              <div class="hero__portrait-badge">
+                <p class="hero__portrait-name">Александра Волкова</p>
+                <p class="hero__portrait-role">ACCA · MBA · CFA · Гипнотерапевт</p>
+              </div>
+              <aside class="hero__float-card" aria-label="Выведено в реальную жизнь">
+                <p class="hero__float-label">Результат</p>
+                <p class="hero__float-value">$7K+</p>
+              </aside>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Marquee -->
+        <div class="marquee-section">
+          <div class="marquee" id="marquee" aria-hidden="true">
+            <div class="marquee__track" id="marquee-track">
+              <span class="marquee__item"><strong>ACCA</strong></span>
+              <span class="marquee__separator"></span>
+              <span class="marquee__item"><strong>MBA</strong></span>
+              <span class="marquee__separator"></span>
+              <span class="marquee__item"><strong>CFA</strong></span>
+              <span class="marquee__separator"></span>
+              <span class="marquee__item"><strong>Гипнотерапевт</strong></span>
+              <span class="marquee__separator"></span>
+              <span class="marquee__item">Private Capital</span>
+              <span class="marquee__separator"></span>
+              <span class="marquee__item">@alexavolkova</span>
+              <span class="marquee__separator"></span>
+              <span class="marquee__item">+31622912016</span>
+              <span class="marquee__separator"></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Hub -->
+      <section class="section section--chocolate" id="hub" aria-labelledby="hub-title">
+        <div class="container">
+          <div class="section__top section__top--center reveal-home">
+            <p class="section__label">Навигация</p>
+            <h2 class="section__title" id="hub-title">Четыре раздела — <em>без лишнего</em></h2>
+            <p class="section__desc">Обо мне · Услуги · Капитал · Отзывы. Каждый раздел — отдельная страница с глубоким контентом.</p>
+          </div>
+          <div class="home-hub" id="home-hub"></div>
+        </div>
+      </section>
+
+      <!-- About showcase -->
+      <section class="section section--cream" id="about-preview" aria-labelledby="about-preview-title">
+        <div class="container">
+          <div class="home-showcase reveal-home">
+            <div class="home-showcase__visual">
+              <span class="home-showcase__corner" aria-hidden="true">✦</span>
+              <div class="home-showcase__frame">
+                <img src="assets/images/photos/taty-1.jpeg" alt="Александра Волкова — Private Capital" loading="lazy" width="560" height="700">
+                <span class="home-showcase__badge">ACCA · MBA · CFA</span>
+              </div>
+            </div>
+            <div class="home-showcase__content">
+              <p class="section__label">Обо мне</p>
+              <h2 class="section__title" id="about-preview-title">Александра Волкова · <em>Private Capital</em></h2>
+              <p class="section__desc">
+                Помогаю предпринимателям вернуть ясность и устойчивость в деньгах.
+                Мама троих детей. Миссия — держать миллионы спокойно, без выгорания.
+              </p>
+              <ul class="home-showcase__list">
+                <li>Корпоративные финансы: бюджетирование, ликвидность в международных компаниях</li>
+                <li>Путь от потери десятков тысяч € к системе с $16K инвестиции и $12K прибыли</li>
+                <li>Гипнотерапия — работа с блоками на деньги и саботажем дохода</li>
+                <li>Канал Private Capital — логика, практика, долгий горизонт без инфо-шума</li>
+              </ul>
+              <div class="home-showcase__badges">
+                <span class="home-showcase__badge-item">ACCA</span>
+                <span class="home-showcase__badge-item">MBA</span>
+                <span class="home-showcase__badge-item">CFA</span>
+                <span class="home-showcase__badge-item">Гипнотерапевт</span>
+              </div>
+              <div class="home-showcase__actions">
+                <a href="about.html" class="btn-cta" data-cursor="hover">
+                  <span class="btn-cta__glow"></span>
+                  Полная биография
+                </a>
+                <a href="reviews.html#contact" class="btn-ghost" data-cursor="hover">
+                  Диагностика 30 мин
+                  <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                    <path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section section--chocolate" id="services-preview" aria-labelledby="services-preview-title">
+        <div class="container home-services-wrap">
+          <header class="home-services__head reveal-home">
+            <p class="section__label">Услуги</p>
+            <h2 class="section__title" id="services-preview-title">Три формата <em>работы</em></h2>
+            <p class="home-services__lead">Инвестиции · Личный аудит · Консультация 30 минут. Выберите маршрут — детали на отдельной странице.</p>
+          </header>
+          <div class="home-services__list" id="home-services"></div>
+          <footer class="home-services__foot reveal-home">
+            <a href="services.html" class="btn-cta" data-cursor="hover">
+              <span class="btn-cta__glow"></span>
+              Подробно по каждой услуге
+            </a>
+          </footer>
+        </div>
+      </section>
+
+      <!-- Manifesto -->
+      <section class="section section--cream" id="manifesto" aria-labelledby="manifesto-title">
+        <div class="container">
+          <div class="section__top section__top--center reveal-home">
+            <p class="section__label">Манифест</p>
+            <h2 class="section__title" id="manifesto-title">Капитал — это <em>система</em>, не схема</h2>
+          </div>
+          <div class="home-manifesto reveal-home">
+            <div class="home-manifesto__card home-manifesto__card--no">
+              <h3>Здесь не будет</h3>
+              <ul id="manifesto-not"></ul>
+            </div>
+            <div class="home-manifesto__card home-manifesto__card--yes">
+              <h3>Зато будет</h3>
+              <ul id="manifesto-yes"></ul>
+            </div>
+          </div>
+          <p class="text-center reveal-home" style="margin-top:32px;text-align:center;">
+            <a href="about.html" class="btn-ghost" data-cursor="hover">
+              Полный манифест и биография
+              <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                <path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <!-- Reviews teaser -->
+      <section class="section section--chocolate" id="reviews-preview" aria-labelledby="reviews-preview-title">
+        <div class="container">
+          <div class="section__top section__top--center reveal-home">
+            <p class="section__label">Голоса</p>
+            <h2 class="section__title" id="reviews-preview-title">Видео-отзывы клиентов</h2>
+            <p class="section__desc">Реальные истории на YouTube — у каждого видео краткая суть из слов клиента.</p>
+          </div>
+          <div class="home-reviews-teaser reveal-home">
+            <p class="home-reviews-teaser__count"><span>9</span> видео</p>
+            <a href="reviews.html" class="btn-cta" data-cursor="hover">
+              <span class="btn-cta__glow"></span>
+              Смотреть все отзывы
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="section" id="contact-preview" aria-labelledby="contact-preview-title">
+        <div class="container">
+          <div class="home-cta reveal-home">
+            <h2 class="home-cta__title" id="contact-preview-title">Записаться на диагностику 30 минут</h2>
+            <p class="home-cta__text">Бесплатно · +31622912016 · @alexavolkova · WhatsApp · Telegram</p>
+            <div class="home-cta__actions">
+              <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+                <span class="btn-cta__glow"></span>
+                Форма заявки
+              </a>
+              <a href="https://t.me/privatecapitalalexa" class="btn-ghost" target="_blank" rel="noopener noreferrer" data-cursor="hover">
+                Канал Private Capital
+                <svg viewBox="0 0 16 16" fill="none" aria-hidden="true">
+                  <path d="M3 8h10M9 4l4 4-4 4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="footer-full" id="site-footer" role="contentinfo"></footer>
+
+  </div>
+
+  <div class="sticky-cta" id="sticky-cta">
+    <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+      <span class="btn-cta__glow"></span>
+      Оставить заявку
+    </a>
+  </div>
+
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

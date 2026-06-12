@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Курс осознанности Татьяны — 15 видео: подсознание и инвестиции. Вход по логину от Татьяны.">
+  <meta name="theme-color" content="#0A0C0A">
+  <title>Курс осознанности — Александра Волкова · Private Capital</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/boot-guard.js"></script>
+</head>
+<body>
+
+  <div class="preloader" id="preloader" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-label="Загрузка">
+    <div>
+      <p class="preloader__name" id="preloader-name">Александра Волкова</p>
+      <p class="preloader__tagline" id="preloader-tagline">Private Capital · Курс осознанности</p>
+    </div>
+    <div>
+      <div class="preloader__bar-wrap" id="preloader-bar"></div>
+      <p class="preloader__percent" id="preloader-percent">0%</p>
+    </div>
+  </div>
+
+  <div class="cursor is-hidden" id="cursor" aria-hidden="true">
+    <div class="cursor__ring"></div>
+    <div class="cursor__dot"></div>
+  </div>
+
+  <div class="environment" aria-hidden="true">
+    <canvas class="environment__canvas" id="environment-canvas"></canvas>
+    <div class="environment__grain"></div>
+    <div class="environment__vignette"></div>
+  </div>
+
+  <div class="page">
+
+    <header class="header" role="banner">
+      <div class="header__inner container">
+        <a href="index.html" class="header__logo" data-cursor="hover">
+          <span class="header__logo-name">Александра Волкова</span>
+          <span class="header__logo-tag">Private Capital</span>
+        </a>
+        <nav class="header-subnav" id="header-subnav" aria-label="Навигация по сайту"></nav>
+        <button class="header__burger" id="nav-burger" type="button" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav-panel" data-cursor="hover">
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+          <span class="header__burger-line"></span>
+        </button>
+      </div>
+    </header>
+
+    <nav class="nav-panel" id="nav-panel" aria-hidden="true">
+      <div class="nav-panel__bg"></div>
+      <div class="nav-panel__grain"></div>
+      <div class="nav-panel__inner">
+        <ul class="nav-panel__list">
+          <li class="nav-panel__item"><a href="index.html" class="nav-panel__link" data-num="01" data-cursor="hover">Главная</a></li>
+          <li class="nav-panel__item"><a href="about.html" class="nav-panel__link" data-num="02" data-cursor="hover">Обо мне</a></li>
+          <li class="nav-panel__item"><a href="services.html" class="nav-panel__link" data-num="03" data-cursor="hover">Услуги</a></li>
+          <li class="nav-panel__item"><a href="capital.html" class="nav-panel__link" data-num="04" data-cursor="hover">Капитал</a></li>
+          <li class="nav-panel__item"><a href="reviews.html" class="nav-panel__link" data-num="05" data-cursor="hover">Отзывы</a></li>
+          <li class="nav-panel__item"><a href="course.html" class="nav-panel__link nav-panel__link--course is-active" data-num="06" data-cursor="hover">Курс осознанности</a></li>
+        </ul>
+        <div class="nav-panel__cta">
+          <a href="reviews.html#contact" class="btn-cta" data-cursor="hover">
+            <span class="btn-cta__glow"></span>
+            Бесплатная диагностика
+          </a>
+        </div>
+        <div class="nav-panel__footer">
+          <a href="https://t.me/alexavolkova" target="_blank" rel="noopener noreferrer" data-cursor="hover">@alexavolkova</a>
+          <a href="tel:+31622912016" data-cursor="hover">+31622912016</a>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+
+      <section class="page-hero-capital page-hero-course" aria-labelledby="course-title">
+        <div class="page-hero-capital__bg page-hero-course__bg" aria-hidden="true"></div>
+        <div class="container page-hero-capital__inner">
+          <p class="page-hero-capital__crumb"><a href="index.html">Главная</a> / Курс осознанности</p>
+          <span class="eyebrow">Видеокурс Татьяны</span>
+          <h1 class="page-hero-capital__title" id="course-title">
+            Курс<br><em>осознанности</em>
+          </h1>
+          <p class="page-hero-capital__sub">
+            15 видео: 7 уроков о подсознании и 7 об инвестициях + введение. Вход по логину от Татьяны.
+          </p>
+        </div>
+      </section>
+
+      <!-- Login gate -->
+      <section class="section course-gate" id="course-gate" aria-labelledby="course-gate-title">
+        <div class="container">
+          <div class="course-gate__card reveal-course">
+            <div class="course-gate__icon" aria-hidden="true">◈</div>
+            <h2 class="course-gate__title" id="course-gate-title">Вход в курс</h2>
+            <p class="course-gate__hint" id="course-gate-hint">
+              Логин и пароль для входа выдаёт Татьяна лично. Напишите ей в Telegram.
+            </p>
+            <form class="course-gate__form" id="course-login-form" novalidate>
+              <div class="course-gate__field">
+                <label class="course-gate__label" for="course-login">Логин</label>
+                <input class="course-gate__input" type="text" id="course-login" name="login" autocomplete="username" placeholder="Введите логин" required data-cursor="hover">
+              </div>
+              <div class="course-gate__field">
+                <label class="course-gate__label" for="course-password">Пароль</label>
+                <input class="course-gate__input" type="password" id="course-password" name="password" autocomplete="current-password" placeholder="Введите пароль" required data-cursor="hover">
+              </div>
+              <p class="course-gate__error" id="course-login-error" role="alert"></p>
+              <button class="btn-cta course-gate__submit" type="submit" data-cursor="hover">
+                <span class="btn-cta__glow"></span>
+                Войти и смотреть
+              </button>
+            </form>
+            <p class="course-gate__contact">
+              <a href="https://t.me/alexavolkova" target="_blank" rel="noopener noreferrer" data-cursor="hover">Написать Татьяне →</a>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Course content (after login) -->
+      <div id="course-content" hidden>
+
+        <section class="section" style="padding-top:0;">
+          <div class="container">
+            <div class="course-stats reveal-course">
+              <div class="course-stat"><div class="course-stat__val">15</div><div class="course-stat__lbl">Видео-уроков</div></div>
+              <div class="course-stat"><div class="course-stat__val">7</div><div class="course-stat__lbl">Подсознание</div></div>
+              <div class="course-stat"><div class="course-stat__val">7</div><div class="course-stat__lbl">Инвестиции</div></div>
+              <div class="course-stat"><div class="course-stat__val">5ч+</div><div class="course-stat__lbl">Контента</div></div>
+            </div>
+
+            <div style="display:flex;justify-content:flex-end;margin-bottom:32px;">
+              <button type="button" class="course-logout" id="course-logout" data-cursor="hover">Выйти из курса</button>
+            </div>
+
+            <!-- Inline lesson panel — NO fullscreen overlay -->
+            <div class="course-lesson" id="course-lesson" hidden>
+              <div class="course-lesson__inner">
+                <button class="course-lesson__close" type="button" aria-label="Закрыть урок" id="course-lesson-close" data-cursor="hover">×</button>
+                <div class="course-lesson__preview" id="course-lesson-preview"></div>
+                <div class="course-lesson__body">
+                  <p class="course-lesson__num" id="course-lesson-num">Урок 01</p>
+                  <h3 class="course-lesson__title" id="course-lesson-title">—</h3>
+                  <p class="course-lesson__desc" id="course-lesson-desc"></p>
+                  <p class="course-lesson__meta" id="course-lesson-meta"></p>
+                  <p class="course-lesson__note">Демо-заглушка. Полная версия видео — по логину от Татьяны.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="course-intro" id="course-intro" aria-label="Введение в курс"></div>
+
+            <div class="course-block">
+              <div class="course-block__head reveal-course">
+                <div>
+                  <span class="course-block__badge course-block__badge--sage">Блок 1</span>
+                  <h2 class="course-block__title">Подсознание и деньги</h2>
+                </div>
+                <span class="course-block__count">7 видео</span>
+              </div>
+              <div class="course-grid" id="course-sub-grid" role="list"></div>
+            </div>
+
+            <div class="course-block">
+              <div class="course-block__head reveal-course">
+                <div>
+                  <span class="course-block__badge course-block__badge--gold">Блок 2</span>
+                  <h2 class="course-block__title">Осознанные инвестиции</h2>
+                </div>
+                <span class="course-block__count">7 видео</span>
+              </div>
+              <div class="course-grid" id="course-inv-grid" role="list"></div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+    </main>
+
+    <footer class="footer-full" id="site-footer" role="contentinfo"></footer>
+
+  </div>
+
+  <script type="module" src="js/course.js"></script>
+</body>
+</html>
