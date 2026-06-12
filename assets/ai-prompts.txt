@@ -1,0 +1,177 @@
+═══════════════════════════════════════════════════════════════════
+  STAGE 5 · AI IMAGE & VIDEO GENERATION PROMPTS
+  Александра Волкова · Private Capital
+  Палитра: #0A0C0A · #F5F2EB · #D4AF37 · #8B9D83
+  Стиль: old money, тихая роскошь, минимализм, без визуального мусора
+═══════════════════════════════════════════════════════════════════
+
+ИНСТРУКЦИЯ
+──────────
+Генерируйте арт в Midjourney v6+, Kling, Runway Gen-3, Flux или Stable Diffusion.
+Реальные фото Александры — основа; AI-контент — только фоны, абстракции, иконки.
+После генерации: экспорт WebP/MP4, сжатие до <500 KB (изображения) / <3 MB (loop video).
+Размещение на сайте: assets/images/generated/ и assets/video/generated/
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 1 · BACKGROUND LOOP (Hero / Section ambient)
+───────────────────────────────────────────────────────────────────
+Инструмент: Kling / Runway / Pika
+Формат: 16:9, 4–6 сек loop, seamless
+
+EN:
+Cinematic close up of abstract dark fluid mixing with liquid gold, slow motion,
+elegant, luxurious, dark aesthetic, soft studio lighting, photorealistic, 8k,
+subtle film grain, no text, no faces --ar 16:9
+
+RU (для Kling):
+Кинематографичное крупное плано: тёмная абстрактная жидкость смешивается
+с жидким золотом, медленное движение, элегантно, роскошно, мягкий студийный свет,
+без текста и лиц, бесшовный loop
+
+Настройки: motion low, camera static, duration 5s, loop on
+Файл: assets/video/generated/bg-gold-fluid-loop.mp4
+Использование: фон page-hero-capital, reviews hero (opacity 0.35)
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 2 · SERVICE ICONS / ABSTRACT 3D SHAPES
+───────────────────────────────────────────────────────────────────
+Инструмент: Midjourney / Flux
+Формат: 1:1, 4 варианта (инвестиции, аудит, консультация, капитал)
+
+EN:
+Minimalist 3D geometric shape floating in dark space, sage green and gold accents,
+frosted glass texture, soft caustics, architectural design, ultra high definition,
+octane render, charcoal background #0A0C0A, no text --ar 1:1 --style raw --v 6
+
+Вариации (добавить к базовому промпту):
+  · Investments: ascending stacked golden rings, subtle upward motion blur
+  · Audit: translucent glass cube with inner golden grid, precision feel
+  · Consultation: single sage-green orb with gold halo, meditative calm
+  · Capital: interlocking icosahedron wireframe, gold edges, sage fill
+
+Файлы: assets/images/generated/icon-invest.webp, icon-audit.webp, etc.
+Использование: home services cards, capital scenarios fallback
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 3 · HYPNOTHERAPY / SUBCONSCIOUS CONCEPT
+───────────────────────────────────────────────────────────────────
+Инструмент: Midjourney / DALL·E
+Формат: 16:9
+
+EN:
+A subtle elegant abstract representation of a human mind expanding,
+thin glowing wireframe lines, dark charcoal background, calming meditative,
+highly detailed minimalist, sage green and soft gold accents, no face, no text
+--ar 16:9 --style raw
+
+RU:
+Тонкая абстракция расширяющегося сознания, светящиеся линии-каркас,
+тёмный фон, успокаивающая медитативная атмосфера, шалфей и золото,
+без лица и текста
+
+Файл: assets/images/generated/mind-expansion.webp
+Использование: about.html journey section, home showcase background
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 4 · OLD MONEY TEXTURE (Grain overlay source)
+───────────────────────────────────────────────────────────────────
+Инструмент: Midjourney
+Формат: 16:9 tileable
+
+EN:
+Seamless film grain texture overlay, warm cream and charcoal noise,
+subtle paper fiber, luxury editorial magazine feel, monochrome, tileable
+--ar 16:9 --tile --style raw
+
+Файл: assets/images/generated/grain-texture.webp
+Использование: optional CSS background overlay (blend-mode: overlay, opacity 0.04)
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 5 · CAPITAL STAGES — ABSTRACT TIMELINE
+───────────────────────────────────────────────────────────────────
+Инструмент: Midjourney / Flux
+Формат: 9:16 (vertical) или 3:4
+
+EN:
+Vertical abstract timeline of seven ascending golden light nodes connected
+by thin sage lines, dark onyx background, minimalist data visualization aesthetic,
+no numbers, no text, soft glow, editorial finance mood --ar 9:16
+
+Файл: assets/images/generated/stages-timeline.webp
+Использование: capital.html stages section ambient (position absolute, opacity 0.15)
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 6 · PORTRAIT COMPOSITE (НЕ заменяет реальное фото!)
+───────────────────────────────────────────────────────────────────
+Инструмент: Midjourney (только если нужен placeholder до съёмки)
+Формат: 3:4
+
+EN:
+Editorial portrait environment only: soft cream studio backdrop, subtle gold
+rim light from left, sage shadow on right, empty space for subject compositing,
+old money aesthetic, no person, no face --ar 3:4
+
+ВАЖНО: Не генерировать лицо «похожее на Александру» без её согласия.
+Использовать только как фон под реальное фото (mask composite в Figma/PS).
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 7 · MARQUEE / DIVIDER ORNAMENT
+───────────────────────────────────────────────────────────────────
+Инструмент: Midjourney
+Формат: 21:9 ultra-wide
+
+EN:
+Horizontal decorative line ornament, single thin gold stroke with sage leaf motif,
+symmetrical, minimal, dark transparent background, luxury brand divider,
+vector-like clarity --ar 21:9 --style raw
+
+Файл: assets/images/generated/ornament-divider.webp
+Использование: section separators, footer accent
+
+
+───────────────────────────────────────────────────────────────────
+PROMPT 8 · REVIEWS SECTION MOOD
+───────────────────────────────────────────────────────────────────
+Инструмент: Runway / Kling
+Формат: 16:9 loop 3s
+
+EN:
+Soft bokeh particles drifting in dark space, gold and sage specks,
+extremely slow, cinematic depth of field, trust and calm atmosphere,
+no faces, no text --ar 16:9
+
+Файл: assets/video/generated/reviews-particles-loop.mp4
+Использование: reviews.html hero background layer
+
+
+───────────────────────────────────────────────────────────────────
+NEGATIVE PROMPTS (для всех генераций)
+───────────────────────────────────────────────────────────────────
+EN:
+cartoon, anime, neon colors, bright saturated, cluttered, busy background,
+stock photo watermark, text, logo, UI elements, cheap luxury, bitcoin symbols,
+crypto charts, dollar signs everywhere, smiling stock models, plastic skin,
+oversaturated gold, lens flare abuse, HDR overdone, low resolution, jpeg artifacts
+
+RU:
+мультфильм, неон, крипто-символы, текст на изображении, дешёвая роскошь,
+перегруженный фон, водяные знаки, пластиковая кожа
+
+
+───────────────────────────────────────────────────────────────────
+POST-PRODUCTION CHECKLIST
+───────────────────────────────────────────────────────────────────
+□ Цветокоррекция под палитру сайта (тени → #0A0C0A, акценты → #D4AF37 / #8B9D83)
+□ WebP quality 82–88 для статики
+□ MP4 H.264, muted, autoplay-ready для loops
+□ Проверка на мобильном: не отвлекает от контента (opacity ≤ 0.4)
+□ Alt-текст: decorative / aria-hidden для чисто декоративных слоёв
+
+═══════════════════════════════════════════════════════════════════
