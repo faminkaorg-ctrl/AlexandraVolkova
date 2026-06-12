@@ -1,0 +1,36 @@
+.footer-minimal {
+  position: relative;
+  z-index: 2;
+  padding: 48px 0;
+  border-top: 1px solid var(--line-dark);
+}
+
+.footer-minimal__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  font-size: 0.75rem;
+  color: var(--text-light-dim);
+  letter-spacing: 0.06em;
+}
+
+.footer-minimal__brand {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  color: var(--text-light-muted);
+}
+
+.footer-minimal__links {
+  display: flex;
+  gap: 28px;
+}
+
+.footer-minimal__links a {
+  transition: color 0.3s;
+}
+
+.footer-minimal__links a:hover {
+  color: var(--gold);
+}

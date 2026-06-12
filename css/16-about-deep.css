@@ -1,0 +1,518 @@
+/* About page — expanded deep zone after dual-scroll */
+
+.about-deep {
+  position: relative;
+  background: var(--bg-onyx);
+  padding-bottom: clamp(80px, 10vh, 140px);
+}
+
+.about-deep__beam {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 2px;
+  height: 0;
+  transform: translateX(-50%);
+  background: linear-gradient(180deg, transparent, var(--gold), var(--sage), transparent);
+  box-shadow: 0 0 24px var(--gold-glow);
+  transform-origin: top center;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.about-deep__gateway {
+  position: relative;
+  padding: clamp(100px, 14vh, 180px) 0 clamp(80px, 10vh, 120px);
+  text-align: center;
+  overflow: hidden;
+}
+
+.about-deep__gateway::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 50% 0%, rgba(212, 175, 55, 0.08), transparent 70%),
+    radial-gradient(ellipse 40% 40% at 80% 60%, rgba(139, 157, 131, 0.05), transparent 60%);
+  pointer-events: none;
+}
+
+.about-deep__gateway-inner {
+  position: relative;
+  z-index: 1;
+  max-width: 920px;
+}
+
+.about-deep__label {
+  display: inline-block;
+  font-size: 0.6875rem;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 28px;
+}
+
+.about-deep__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 6vw, 5rem);
+  font-weight: 500;
+  line-height: 1.05;
+  margin-bottom: 32px;
+  overflow: hidden;
+}
+
+.about-deep__title .word {
+  display: inline-block;
+  will-change: transform, opacity;
+}
+
+.about-deep__lead {
+  font-size: clamp(1.125rem, 2vw, 1.5rem);
+  color: var(--text-light-muted);
+  line-height: 1.65;
+  max-width: 780px;
+  margin: 0 auto 40px;
+}
+
+.about-deep__text {
+  display: grid;
+  gap: 24px;
+  max-width: 820px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.about-deep__text p {
+  font-size: clamp(1rem, 1.4vw, 1.1875rem);
+  color: var(--text-light-muted);
+  line-height: 1.8;
+  padding-left: 24px;
+  border-left: 2px solid var(--line-gold);
+}
+
+/* Blocks */
+.about-deep__block {
+  position: relative;
+  padding: clamp(80px, 12vh, 160px) 0;
+  transform-origin: center top;
+}
+
+.about-deep__block + .about-deep__block::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(90%, 1200px);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--line-dark), transparent);
+}
+
+.about-deep__head {
+  margin-bottom: clamp(48px, 6vh, 80px);
+  max-width: 820px;
+}
+
+.about-deep__head-title {
+  font-family: var(--font-display);
+  font-size: clamp(2.25rem, 4.5vw, 3.75rem);
+  font-weight: 500;
+  line-height: 1.08;
+  margin: 12px 0 24px;
+}
+
+.about-deep__head-desc {
+  font-size: clamp(1.0625rem, 1.6vw, 1.3125rem);
+  color: var(--text-light-muted);
+  line-height: 1.75;
+}
+
+/* Stats */
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 3vw, 32px);
+}
+
+.about-stat {
+  position: relative;
+  padding: clamp(36px, 5vw, 56px) clamp(28px, 4vw, 40px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line-dark);
+  background: linear-gradient(160deg, rgba(212, 175, 55, 0.06), rgba(10, 12, 10, 0.9));
+  overflow: hidden;
+  transition: border-color 0.45s, box-shadow 0.45s, transform 0.5s var(--ease-out-expo);
+}
+
+.about-stat::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 100% 0%, var(--gold-glow), transparent 55%);
+  opacity: 0;
+  transition: opacity 0.45s;
+}
+
+.about-stat:hover {
+  border-color: var(--line-gold);
+  transform: translateY(-8px);
+  box-shadow: 0 32px 80px rgba(0, 0, 0, 0.4), 0 0 48px var(--gold-glow);
+}
+
+.about-stat:hover::before {
+  opacity: 1;
+}
+
+.about-stat__value {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 600;
+  color: var(--gold);
+  line-height: 1;
+  margin-bottom: 12px;
+}
+
+.about-stat__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 16px;
+}
+
+.about-stat__desc {
+  font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+  color: var(--text-light-muted);
+  line-height: 1.7;
+}
+
+/* Terminal deep */
+.terminal--deep {
+  margin-bottom: clamp(40px, 6vh, 72px);
+  transform: scale(1);
+}
+
+.terminal--deep .terminal__header {
+  padding: 20px 28px;
+  font-size: 0.75rem;
+}
+
+.terminal--deep .terminal__table thead th {
+  padding: 22px 32px;
+  font-size: 0.6875rem;
+}
+
+.terminal--deep .terminal__table tbody td {
+  padding: 28px 32px;
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+}
+
+.terminal--deep .terminal__code {
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+}
+
+/* Credential cards */
+.cred-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: clamp(24px, 3vw, 36px);
+}
+
+.cred-card {
+  position: relative;
+  padding: clamp(36px, 5vw, 52px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line-dark);
+  background: var(--bg-chocolate);
+  overflow: hidden;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.cred-card::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, var(--gold), var(--sage));
+  opacity: 0.6;
+}
+
+.cred-card__code {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 8px;
+}
+
+.cred-card__area {
+  font-size: 0.75rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 20px;
+}
+
+.cred-card__apply {
+  font-size: clamp(1.0625rem, 1.4vw, 1.25rem);
+  font-weight: 500;
+  color: var(--text-light);
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.cred-card__detail {
+  font-size: clamp(0.9375rem, 1.2vw, 1.0625rem);
+  color: var(--text-light-muted);
+  line-height: 1.8;
+}
+
+/* Philosophy */
+.philosophy-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: clamp(24px, 3vw, 36px);
+}
+
+.philosophy-pillar {
+  position: relative;
+  padding: clamp(40px, 5vw, 56px) clamp(32px, 4vw, 44px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line-dark);
+  background: rgba(10, 12, 10, 0.6);
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.philosophy-pillar__num {
+  font-family: var(--font-display);
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  font-weight: 500;
+  color: rgba(212, 175, 55, 0.12);
+  line-height: 1;
+  margin-bottom: 16px;
+}
+
+.philosophy-pillar__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: var(--gold);
+}
+
+.philosophy-pillar__text {
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+  color: var(--text-light-muted);
+  line-height: 1.8;
+  flex: 1;
+}
+
+/* Diplomas deep */
+.diplomas--deep {
+  grid-template-columns: repeat(4, 1fr);
+  gap: clamp(20px, 3vw, 28px);
+}
+
+.diplomas--deep .diploma-card {
+  aspect-ratio: 3/4;
+  min-height: 280px;
+}
+
+.diploma-card__desc {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 48px 16px 16px;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: var(--text-light-muted);
+  background: linear-gradient(transparent, rgba(10, 12, 10, 0.95));
+  transform: translateY(100%);
+  transition: transform 0.45s var(--ease-out-expo);
+}
+
+.diploma-card:hover .diploma-card__desc {
+  transform: translateY(0);
+}
+
+.diploma-card:hover .diploma-card__label {
+  opacity: 0;
+}
+
+/* Manifesto deep */
+.about-manifesto--deep {
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.about-manifesto--deep .about-manifesto__card {
+  padding: clamp(44px, 6vw, 64px) clamp(36px, 5vw, 52px);
+  min-height: 480px;
+}
+
+.about-manifesto--deep .about-manifesto__card h3 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  margin-bottom: 36px;
+}
+
+.about-manifesto--deep .about-manifesto__card li {
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+  padding: 20px 0;
+  border-bottom-color: rgba(255, 255, 255, 0.06);
+  overflow: hidden;
+}
+
+.about-manifesto--deep .about-manifesto__card li strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 1.6vw, 1.375rem);
+  font-weight: 600;
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.about-manifesto--deep .about-manifesto__card li span {
+  display: block;
+  color: var(--text-light-muted);
+  line-height: 1.75;
+}
+
+/* Audience deep */
+.audience-grid--deep {
+  gap: clamp(28px, 4vw, 40px);
+}
+
+.audience-grid--deep .audience-card {
+  padding: clamp(40px, 5vw, 56px);
+  min-height: 420px;
+}
+
+.audience-grid--deep .audience-card h3 {
+  font-size: clamp(1.375rem, 2vw, 1.75rem);
+  margin-bottom: 32px;
+}
+
+.audience-grid--deep .audience-card li {
+  font-size: clamp(1rem, 1.3vw, 1.125rem);
+  padding: 18px 0;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.audience-grid--deep .audience-card li strong {
+  display: block;
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 1.5vw, 1.3125rem);
+  color: var(--text-light);
+  margin-bottom: 8px;
+}
+
+.audience-grid--deep .audience-card li span {
+  display: block;
+  color: var(--text-light-muted);
+  line-height: 1.7;
+}
+
+/* CTA deep */
+.about-deep-cta {
+  text-align: center;
+  padding: clamp(64px, 10vh, 120px) clamp(32px, 5vw, 64px);
+  border-radius: var(--radius-xl);
+  border: 1px solid var(--line-gold);
+  background:
+    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(212, 175, 55, 0.12), transparent 65%),
+    linear-gradient(180deg, rgba(10, 12, 10, 0.95), var(--bg-chocolate));
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.45), 0 0 80px rgba(212, 175, 55, 0.08);
+}
+
+.about-deep-cta__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.about-deep-cta__lead {
+  font-size: clamp(1.125rem, 1.8vw, 1.375rem);
+  color: var(--gold);
+  margin-bottom: 24px;
+}
+
+.about-deep-cta__text {
+  font-size: clamp(1rem, 1.4vw, 1.1875rem);
+  color: var(--text-light-muted);
+  line-height: 1.8;
+  max-width: 640px;
+  margin: 0 auto 20px;
+}
+
+.about-deep-cta__channels {
+  font-size: 0.8125rem;
+  letter-spacing: 0.08em;
+  color: var(--text-light-dim);
+  margin-bottom: 40px;
+}
+
+.about-deep-cta .btn-cta {
+  padding: 22px 48px;
+  font-size: 0.8125rem;
+}
+
+@media (max-width: 1200px) {
+  .about-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .philosophy-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cred-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .about-deep__block {
+    transform: none !important;
+    opacity: 1 !important;
+  }
+
+  .about-deep__title .word {
+    transform: none;
+    opacity: 1;
+  }
+
+  .diplomas--deep {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .diploma-card__desc {
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .diplomas--deep {
+    grid-template-columns: 1fr;
+  }
+
+  .about-deep__text {
+    text-align: center;
+  }
+
+  .about-deep__text p {
+    padding-left: 0;
+    border-left: none;
+    padding-top: 16px;
+    border-top: 1px solid var(--line-dark);
+  }
+}

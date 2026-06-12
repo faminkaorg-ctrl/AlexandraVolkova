@@ -1,0 +1,45 @@
+/* Progressive reveal: visible without JS, hidden once JS boots */
+.reveal-home,
+.reveal-services,
+.reveal-capital,
+.reveal-about,
+.reveal-reviews,
+.reveal-course,
+.typo-block,
+.myth-item {
+  opacity: 1;
+  transform: none;
+}
+
+html.js .reveal-home,
+html.js .reveal-services,
+html.js .reveal-capital,
+html.js .reveal-about,
+html.js .reveal-reviews,
+html.js .reveal-course,
+html.js .typo-block,
+html.js .myth-item {
+  opacity: 0;
+  /* transform handled by GSAP — avoids double-jump with CSS translateY */
+}
+
+/* About deep: hide copy until GSAP sets + reveals (prevents flash before animate) */
+html.js .about-deep__lead,
+html.js .about-deep__text p,
+html.js .about-deep__head > * {
+  opacity: 0;
+}
+
+/* Deep zones: собственные анимации в *-deep.js */
+html.js .about-deep .reveal-about,
+html.js .svc-theater .svc-act,
+html.js .svc-theater__head,
+html.js .svc-stage .reveal-services,
+html.js .svc-gateway__title,
+html.js .svc-gateway__lead,
+html.js .svc-gateway__text p,
+html.js .svc-cine-hero__title-line,
+html.js .svc-cine-hero__sub {
+  opacity: 1;
+  transform: none;
+}

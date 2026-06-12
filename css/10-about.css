@@ -1,0 +1,592 @@
+/* STAGE 3 — About page */
+
+.page-hero-about {
+  position: relative;
+  padding: calc(var(--header-h) + 72px) 0 72px;
+  overflow: hidden;
+}
+
+.page-hero-about__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, rgba(10, 12, 10, 0.6) 0%, var(--bg-onyx) 90%),
+    url("../assets/images/photos/taty-2.jpeg") center 30% / cover no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+.page-hero-about__inner {
+  position: relative;
+  z-index: 2;
+  max-width: 640px;
+}
+
+/* ── Dualistic pinned scroll ── */
+.dual-scroll {
+  position: relative;
+  min-height: 100vh;
+}
+
+.dual-scroll__pin {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: clamp(32px, 5vw, 72px);
+  align-items: start;
+  padding-block: clamp(48px, 8vh, 80px);
+}
+
+.dual-scroll__visual-wrap {
+  position: relative;
+  height: min(78vh, 640px);
+}
+
+.dual-scroll__visual {
+  position: relative;
+  height: 100%;
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  border: 1px solid var(--line-gold);
+  box-shadow: 0 40px 80px rgba(0, 0, 0, 0.45);
+}
+
+.dual-scroll__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+  transform: scale(1);
+}
+
+.dual-scroll__visual-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, rgba(10, 12, 10, 0.08) 0%, transparent 35%, transparent 70%, rgba(10, 12, 10, 0.2) 100%);
+  pointer-events: none;
+}
+
+.dual-scroll__visual-caption {
+  display: none;
+}
+
+.dual-scroll__visual-caption h3 {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 4px;
+}
+
+.dual-scroll__visual-caption p {
+  font-size: 0.6875rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-light-muted);
+}
+
+.dual-scroll__progress {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 3px;
+  height: 0%;
+  background: linear-gradient(180deg, var(--gold), var(--sage));
+  box-shadow: 0 0 12px var(--gold-glow);
+  z-index: 3;
+}
+
+.dual-scroll__content {
+  padding-top: 12vh;
+  padding-bottom: 20vh;
+}
+
+.dual-scroll__intro {
+  margin-bottom: 64px;
+  max-width: 520px;
+}
+
+.dual-scroll__intro h2 {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.dual-scroll__intro p {
+  font-size: 1rem;
+  color: var(--text-light-muted);
+  line-height: 1.75;
+}
+
+.journey-step {
+  min-height: 55vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--line-dark);
+  opacity: 0.35;
+  transform: translateY(24px);
+  transition: opacity 0.6s var(--ease-out-expo), transform 0.6s var(--ease-out-expo);
+}
+
+.journey-step.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.journey-step__era {
+  font-size: 0.625rem;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+}
+
+.journey-step__label {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 16px;
+}
+
+.journey-step__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 3vw, 2.5rem);
+  font-weight: 500;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.journey-step__desc {
+  font-size: 1rem;
+  color: var(--text-light-muted);
+  line-height: 1.75;
+  max-width: 480px;
+}
+
+.journey-step__tag {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 8px 16px;
+  font-size: 0.625rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid var(--line-gold);
+  border-radius: 100px;
+  color: var(--gold);
+}
+
+/* ── Terminal credentials table ── */
+.terminal {
+  position: relative;
+  border: 1px solid var(--line-gold);
+  border-radius: var(--radius-lg);
+  background: rgba(10, 12, 10, 0.85);
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(212, 175, 55, 0.06) inset,
+    0 24px 80px rgba(0, 0, 0, 0.4);
+}
+
+.terminal__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid var(--line-dark);
+  background: rgba(212, 175, 55, 0.04);
+  font-size: 0.625rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-light-dim);
+}
+
+.terminal__dots {
+  display: flex;
+  gap: 6px;
+}
+
+.terminal__dots span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--line-dark);
+}
+
+.terminal__dots span:nth-child(1) { background: rgba(212, 175, 55, 0.5); }
+.terminal__dots span:nth-child(2) { background: rgba(139, 157, 131, 0.5); }
+
+.terminal__table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.terminal__table thead th {
+  padding: 16px 24px;
+  text-align: left;
+  font-size: 0.625rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--sage);
+  border-bottom: 1px solid var(--line-dark);
+  background: rgba(139, 157, 131, 0.04);
+}
+
+.terminal__table tbody tr {
+  position: relative;
+  cursor: default;
+  transition: background 0.35s;
+}
+
+.terminal__table tbody tr::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: linear-gradient(90deg, var(--gold-glow), transparent);
+  transition: width 0.4s var(--ease-out-expo);
+}
+
+.terminal__table tbody tr:hover::before {
+  width: 100%;
+}
+
+.terminal__table tbody tr:hover {
+  background: rgba(212, 175, 55, 0.06);
+  box-shadow: 0 0 30px var(--gold-glow) inset;
+}
+
+.terminal__table tbody td {
+  padding: 22px 24px;
+  font-size: 0.9375rem;
+  border-bottom: 1px solid var(--line-dark);
+  position: relative;
+  z-index: 1;
+}
+
+.terminal__table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.terminal__code {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  color: var(--gold);
+  text-shadow: 0 0 20px var(--gold-glow);
+}
+
+.terminal__table tbody tr:hover .terminal__code {
+  color: var(--text-light);
+}
+
+.terminal__scanline {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.03) 2px,
+    rgba(0, 0, 0, 0.03) 4px
+  );
+  opacity: 0.5;
+}
+
+/* ── Diplomas grid ── */
+.diplomas {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+}
+
+.diploma-card {
+  position: relative;
+  aspect-ratio: 3/4;
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  border: 1px solid var(--line-dark);
+  cursor: pointer;
+  background: var(--bg-chocolate);
+  transition: border-color 0.4s, transform 0.4s var(--ease-out-expo);
+}
+
+.diploma-card:hover {
+  border-color: var(--line-gold);
+  transform: translateY(-6px);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.35);
+}
+
+.diploma-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: grayscale(20%) contrast(1.02);
+  transition: filter 0.4s, transform 0.6s var(--ease-out-expo);
+}
+
+.diploma-card:hover img {
+  filter: grayscale(0%);
+  transform: scale(1.04);
+}
+
+.diploma-card__zoom {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: var(--text-light);
+  background: rgba(10, 12, 10, 0);
+  transition: background 0.35s;
+}
+
+.diploma-card:hover .diploma-card__zoom {
+  background: rgba(10, 12, 10, 0.35);
+}
+
+.diploma-card__label {
+  position: absolute;
+  bottom: 12px;
+  left: 12px;
+  right: 12px;
+  font-size: 0.625rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  opacity: 0;
+  transform: translateY(8px);
+  transition: opacity 0.35s, transform 0.35s;
+}
+
+.diploma-card:hover .diploma-card__label {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Spring lightbox */
+.lightbox-spring {
+  position: fixed;
+  inset: 0;
+  z-index: 8000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(10, 12, 10, 0);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  pointer-events: none;
+  opacity: 0;
+}
+
+.lightbox-spring.is-open {
+  pointer-events: auto;
+}
+
+.lightbox-spring__backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(10, 12, 10, 0.88);
+}
+
+.lightbox-spring__frame {
+  position: relative;
+  z-index: 2;
+  max-width: min(90vw, 720px);
+  max-height: 85vh;
+  border-radius: var(--radius-md);
+  border: 1px solid var(--line-gold);
+  box-shadow: 0 40px 100px rgba(0, 0, 0, 0.6), 0 0 60px var(--gold-glow);
+  overflow: hidden;
+  transform: scale(0.7) translateY(40px);
+  opacity: 0;
+}
+
+.lightbox-spring__frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 85vh;
+  object-fit: contain;
+}
+
+.lightbox-spring__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 3;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid var(--line-dark);
+  background: var(--glass-dark);
+  backdrop-filter: blur(12px);
+  color: var(--text-light);
+  font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: border-color 0.3s, background 0.3s;
+}
+
+.lightbox-spring__close:hover {
+  border-color: var(--gold);
+  background: rgba(212, 175, 55, 0.15);
+}
+
+.lightbox-spring__caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 16px 20px;
+  background: linear-gradient(transparent, rgba(10, 12, 10, 0.9));
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light-muted);
+}
+
+/* Manifesto + audience on about */
+.about-manifesto {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.about-manifesto__card {
+  padding: 36px 32px;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--line-dark);
+}
+
+.about-manifesto__card--no {
+  background: rgba(255, 80, 80, 0.04);
+}
+
+.about-manifesto__card--yes {
+  background: linear-gradient(135deg, rgba(212, 175, 55, 0.08), rgba(139, 157, 131, 0.05));
+  border-color: var(--line-gold);
+}
+
+.about-manifesto__card h3 {
+  font-family: var(--font-display);
+  font-size: 1.25rem;
+  margin-bottom: 20px;
+}
+
+.about-manifesto__card--yes h3 {
+  color: var(--gold);
+}
+
+.about-manifesto__card li {
+  font-size: 0.9375rem;
+  color: var(--text-light-muted);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line-dark);
+}
+
+.audience-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.audience-card {
+  padding: 32px;
+  border: 1px solid var(--line-dark);
+  border-radius: var(--radius-lg);
+  background: var(--surface);
+}
+
+.audience-card--yes {
+  border-color: rgba(212, 175, 55, 0.2);
+}
+
+.audience-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--gold);
+}
+
+.audience-card li {
+  font-size: 0.9375rem;
+  color: var(--text-light-muted);
+  padding: 8px 0;
+}
+
+@media (max-width: 1024px) {
+  .dual-scroll__pin {
+    grid-template-columns: 1fr;
+    min-height: auto;
+  }
+
+  .dual-scroll__visual {
+    height: 50vh;
+    position: relative;
+    top: 0 !important;
+  }
+
+  .dual-scroll__content {
+    padding-top: 32px;
+    padding-bottom: 48px;
+  }
+
+  .journey-step {
+    min-height: auto;
+    opacity: 1;
+    transform: none;
+  }
+
+  .diplomas {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-manifesto,
+  .audience-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .terminal__table thead {
+    display: none;
+  }
+
+  .terminal__table tbody tr {
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid var(--line-dark);
+  }
+
+  .terminal__table tbody td {
+    display: block;
+    padding: 6px 0;
+    border: none;
+  }
+
+  .terminal__table tbody td::before {
+    content: attr(data-label);
+    display: block;
+    font-size: 0.625rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--sage);
+    margin-bottom: 4px;
+  }
+}
+
+@media (max-width: 640px) {
+  .diplomas {
+    grid-template-columns: 1fr;
+  }
+}
