@@ -1,0 +1,18 @@
+---
+pid: 19784
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "python server.py"
+started_at: 2026-06-12T08:42:34.015Z
+running_for_ms: 2769999  
+---
+��ப�:1 ����:50
++ (cd "C:\\Users\\PC\\Desktop\\\\�������� ᠩ�" ; python server.py)
++                                                  ~
+�������� ����뢠�騩 ���� ")" � ��ࠦ����.
+��ப�:1 ����:69
++ (cd "C:\\Users\\PC\\Desktop\\\\�������� ᠩ�" ; python server.py)
++                                                                     ~
+��।�������� ���ᥬ� ")" � ��ࠦ���� ��� ������.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisInExpression
+ 

@@ -1,0 +1,25 @@
+---
+pid: 3712
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "Set-Location \"C:\\Users\\PC\\Desktop\\ХЗ\\адекватный сайт\"; python -m http.server 5500 --bind 127.0.0.1"
+started_at: 2026-06-12T06:38:31.243Z
+running_for_ms: 10209992 
+---
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1313, in <module>
+    test(
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1260, in test
+    with ServerClass(addr, HandlerClass) as httpd:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 456, in __init__
+    self.server_bind()
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 1307, in server_bind
+    return super().server_bind()
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\http\server.py", line 136, in server_bind
+    socketserver.TCPServer.server_bind(self)
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.11_3.11.2544.0_x64__qbz5n2kfra8p0\Lib\socketserver.py", line 472, in server_bind
+    self.socket.bind(self.server_address)
+PermissionError: [WinError 10013] Сделана попытка доступа к сокету методом, запрещенным правами доступа

@@ -1,0 +1,103 @@
+---
+pid: 7100
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "python \"C:\\Users\\PC\\Desktop\\ХЗ\\адекватный сайт\\server.py\""
+started_at: 2026-06-12T08:42:51.322Z
+running_for_ms: 2749988  
+---
+Сервер: http://127.0.0.1:5501/
+Модель: gemini-2.5-flash
+Чат-бот: /api/chat
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /services.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/services.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/01-variables.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/02-base.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/04-cursor.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/05-navigation.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/07-marquee.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/09-capital.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/08-footer.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/12-home.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/15-reveal.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/16-about-deep.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/modules/services-cinematic.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/modules/navigation.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/modules/footer.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/modules/subnav.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/modules/reveal.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/modules/utils.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /data/content.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:49] "GET /js/assistant.js?v=4 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:43:56] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:44:39] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:44:39] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:44:47] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:44:47] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:45:21] "GET / HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:21] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:22] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:36] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:36] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:36] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:37] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:37] "GET /js/assistant.js?v=5 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:48] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:48] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:48] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:45:48] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:45:48] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:45:48] "GET /js/assistant.js?v=5 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:02] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:46:15] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:46:37] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:46:49] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:46:49] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:46:53] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:53] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:53] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /css/15-reveal.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /css/09-capital.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /js/modules/footer.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:54] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:55] "GET /js/modules/subnav.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:55] "GET /data/content.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:46:55] "GET /js/assistant.js?v=5 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:47:16] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:47:17] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:47:17] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:47:18] "GET /js/assistant.js?v=5 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:47:50] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:47:50] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:48:51] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:48:51] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:50:13] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:50:13] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:50:57] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:50:57] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:50:57] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:50:57] "GET /js/assistant.js?v=5 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:50:57] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:50:57] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:52:54] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:54] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:55] "GET /css/15-reveal.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:55] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:55] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:55] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:55] "GET /css/09-capital.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:56] "GET /js/modules/subnav.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:56] "GET /js/modules/footer.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:56] "GET /data/content.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:56] "GET /js/modules/cursor.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:56] "GET /js/assistant.js?v=5 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:52:56] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:52:56] "GET /favicon.ico HTTP/1.1" 404 -
+127.0.0.1 - - [12/Jun/2026 15:53:21] code 404, message File not found
+127.0.0.1 - - [12/Jun/2026 15:53:21] "GET /favicon.ico HTTP/1.1" 404 -

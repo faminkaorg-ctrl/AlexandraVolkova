@@ -1,0 +1,14 @@
+---
+pid: 4108
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "cd \"C:\\Users\\PC\\Desktop\\ХЗ\\адекватный сайт\" && python -m http.server 8765"
+started_at: 2026-06-12T06:35:21.866Z
+running_for_ms: 10400003 
+---
+��ப�:1 ����:45
++ cd "C:\Users\PC\Desktop\\�������� ᠩ�" && python -m http.server  ...
++                                             ~~
+��ᥬ� "&&" �� ���� �����⨬� ࠧ����⥫�� �����஢ � �⮩ ���ᨨ.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : InvalidEndOfLine
+ 

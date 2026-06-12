@@ -1,0 +1,18 @@
+---
+pid: 3484
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "python -m http.server 5501 --bind 127.0.0.1"
+started_at: 2026-06-12T07:16:56.941Z
+running_for_ms: 7904997  
+---
+��ப�:1 ����:50
++ (cd "C:\\Users\\PC\\Desktop\\\\�������� ᠩ�" ; python -m http.se ...
++                                                  ~
+�������� ����뢠�騩 ���� ")" � ��ࠦ����.
+��ப�:1 ����:96
++ ... \\\\�������� ᠩ�" ; python -m http.server 5501 --bind 127.0.0.1)
++                                                                         ~
+��।�������� ���ᥬ� ")" � ��ࠦ���� ��� ������.
+    + CategoryInfo          : ParserError: (:) [], ParentContainsErrorRecordException
+    + FullyQualifiedErrorId : MissingEndParenthesisInExpression
+ 

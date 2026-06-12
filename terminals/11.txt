@@ -1,0 +1,105 @@
+---
+pid: 22560
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "Stop-Process -Id 2580,15272 -Force -ErrorAction SilentlyContinue; Start-Sleep -Seconds 2; cd \"C:\\Users\\PC\\Desktop\\ХЗ\\адекватный сайт\"; python server.py"
+started_at: 2026-06-12T08:36:30.050Z
+running_for_ms: 3135008  
+---
+Сервер: http://127.0.0.1:5501/
+Модель: gemini-2.5-flash
+Чат-бот: /api/chat
+127.0.0.1 - - [12/Jun/2026 15:36:43] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:37:02] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /index.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/06-hero.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/09-capital.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/12-home.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/13-services.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/15-reveal.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/16-about-deep.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/17-services-deep.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /js/modules/footer.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /js/modules/subnav.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /js/modules/reveal.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:11] "GET /data/content.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /js/about.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /js/modules/dual-scroll.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /js/modules/terminal-table.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /js/modules/lightbox-spring.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:18] "GET /js/modules/about-deep.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:37] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:37] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:50] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:50] "GET /js/services.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:50] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:50] "GET /js/modules/services-render.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:50] "GET /js/modules/services-cinematic.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:53] "GET /assets/images/generated/svc-invest.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:53] "GET /assets/images/generated/svc-audit.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:37:53] "GET /assets/images/generated/svc-consult.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:01] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:01] "GET /css/10-about.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:01] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:01] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:01] "GET /assets/images/photos/hero-capital.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:01] "GET /js/modules/capital-scroll.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:04] "GET /js/modules/three-scene.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:12] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /capital.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /js/assistant.js?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /css/15-reveal.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /data/content.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /js/modules/footer.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:23] "GET /js/modules/subnav.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:42] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:38:54] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:54] "GET /css/09-capital.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:54] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:38:54] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:39:25] "GET /capital.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:39:25] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:39:25] "GET /js/assistant.js?v=2 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:39:25] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:39:25] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:39:37] "POST /api/chat HTTP/1.1" 200 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/course.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/03-preloader.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/09-capital.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/14-subnav.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/15-reveal.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/17-services-deep.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /css/18-course.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /assets/images/photos/taty-2.jpeg HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /data/content.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/preloader.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/canvas-environment.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/subnav.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/footer.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/course-auth.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/course-lesson.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:02] "GET /js/modules/course-render.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:36] "GET /css/main.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:36] "GET /js/app.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:36] "GET /js/modules/hero.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:36] "GET /js/modules/home-render.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:36] "GET /js/modules/home-scroll.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:40] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:40] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:40] "GET /js/assistant.js?v=4 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:45] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:45] "GET /css/11-reviews.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:45] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:45] "GET /js/assistant.js?v=4 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:54] "GET /services.html HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:54] "GET /js/boot-guard.js HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:54] "GET /css/19-assistant.css HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:54] "GET /assets/images/generated/svc-hero.jpg HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:41:54] "GET /js/assistant.js?v=4 HTTP/1.1" 304 -
+127.0.0.1 - - [12/Jun/2026 15:42:03] "POST /api/chat HTTP/1.1" 200 -

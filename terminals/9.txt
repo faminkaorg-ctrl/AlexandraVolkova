@@ -1,0 +1,10 @@
+---
+pid: 19332
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "cd \"C:\\Users\\PC\\Desktop\\ХЗ\\адекватный сайт\"; python server.py"
+started_at: 2026-06-12T08:36:09.121Z
+running_for_ms: 3155011  
+---
+Сервер: http://127.0.0.1:5501/
+Модель: gemini-2.5-flash
+Чат-бот: /api/chat

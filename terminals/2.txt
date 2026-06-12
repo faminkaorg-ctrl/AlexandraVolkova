@@ -1,0 +1,8 @@
+---
+pid: 27832
+cwd: "C:\Users\PC\Desktop\ХЗ\адекватный сайт"
+command: "Set-Location \"C:\\Users\\PC\\Desktop\\ХЗ\\адекватный сайт\"; python -m http.server 8765"
+started_at: 2026-06-12T06:35:27.011Z
+running_for_ms: 10395008 
+---
+Serving HTTP on :: port 8765 (http://[::]:8765/) ...
